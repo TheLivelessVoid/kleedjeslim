@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google-adsense-account" content="ca-pub-2476073486638705">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO & Open Graph for kleedjeslim.duckdns.org -->
+    <title>Weer & Stijl - Wat moet ik aan?</title>
+    <meta name="description" content="Een slimme kledingadviseur die real-time weerdata gebruikt om de perfecte outfit aan te raden." />
+    <link rel="canonical" href="https://kleedjeslim.duckdns.org" />
+    
+    <meta property="og:url" content="https://kleedjeslim.duckdns.org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Weer & Stijl - Wat moet ik aan?" />
+    <meta property="og:description" content="Slim kledingadvies op basis van real-time weer en jouw voorkeuren." />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      
+      /* Custom Animations replacing tailwindcss-animate plugin */
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.6s ease-out forwards;
+      }
+      
+      @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-slide-down {
+        animation: slideDown 0.3s ease-out forwards;
+      }
+
+      @keyframes slideUpFade {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-slide-up-fade {
+        animation: slideUpFade 0.5s ease-out forwards;
+      }
+
+      .delay-100 { animation-delay: 100ms; }
+      .delay-200 { animation-delay: 200ms; }
+      .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+  <body class="text-slate-900 antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
